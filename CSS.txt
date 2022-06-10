@@ -1,0 +1,52 @@
+Specificity Calculator
+https://specificity.keegan.st/
+
+*** Overflow: auto;
+
+*** Visibility: hidden;
+
+*** Z-index: 2; (To control order of stack)
+
+*** @media screen and (max-width: 600px)
+
+*** Display
+   1. display: inline;
+   2. display: flex;
+      flex-wrap: flex;
+      flex-direction: colum-reverse
+   3. display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: 45px 30px 20px 40px;
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+      ---------------------------------------------------------------------------------------
+       .item1{
+           grid-area: header;
+        }
+        .item2{
+           grid-area: ader;
+        }
+        .item3{
+           grid-area: hea;
+        }
+        grid-template-areas: 'header header header header header header'
+                                 'ader ader ader hea hea hea'
+                                 'ader ader ader hea hea hea';
+
+*** justify-content: flex-end;// can be centered horizontally
+
+*** align-items: flex-end;// can be centered vertically
+
+*** text-shadow: 12px 8px 6px red;
+
+*** box-shadow: 12px 8px 6px red;
+
+*** letter-spacing: 5px
+
+*** Font awesome
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+      
+*** transform
+     1. transform:translate(x,y)
+     2. transform: scale(number)
+     3. transform:rotate(deg)

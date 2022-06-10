@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            animation: anim1 3s  1s;
+            animation-iteration-count: infinite;
+            font-size: 40px;
+            position: relative;
+            width: 50%;
+        }
+        @keyframes anim1 {
+
+
+            /* from{
+                color: aqua;
+            }
+            to{
+                font-size: 60px;
+                background-color: aqua;
+            }  */
+
+
+
+            0%{
+                color: aqua;
+                font-size: 40px;
+            }
+            50%{
+                font-size: 60px;
+                color: rgb(0, 0, 0);
+                background-color: aqua;
+            }
+            100%{
+                color: aqua;
+                font-size: 40px;
+            }
+            
+        }
+
+
+        h1::before{
+            content: '';
+            position: absolute;
+            top: calc(100% + 5px);
+            left: 0;
+            
+            background-color: rgb(170, 167, 173);
+            width: 100%;
+            height: 25px;
+            border-radius: 1000px;
+        }
+
+        h1::after{
+            content: '';
+            position: absolute;
+            top: calc(100% + 5px);
+            left: 0;
+
+            background-color: rgb(23, 23, 220);
+            width: 0;
+            height: 25px;
+            border-radius: 1000px;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+
+
+        h1.html::after{
+            animation-name: anim2;
+        }
+        h1.css::after{
+            animation-name: anim3;
+        }
+        h1.js::after{
+            animation-name: anim4;
+        }
+        h1.php::after{
+            animation-name: anim5;
+        }
+        h1.python::after{
+            animation-name: anim6;
+        }
+
+
+        @keyframes anim2 {
+            from{
+                width: 0;
+            }
+            to{
+                width: 98%;
+            }
+        }
+        @keyframes anim3 {
+            from{
+                width: 0;
+            }
+            to{
+                width: 95%;
+            }
+        }
+        @keyframes anim4 {
+            from{
+                width: 0;
+            }
+            to{
+                width: 80%;
+            }
+        }
+        @keyframes anim5 {
+            from{
+                width: 0;
+            }
+            to{
+                width: 80%;
+            }
+        }
+        @keyframes anim6 {
+            from{
+                width: 0;
+            }
+            to{
+                width: 50%;
+            }
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+
+   <div class="main">
+       <h1 class="html">HTML</h1>
+       <h1 class="css">CSS</h1> 
+       <h1 class="js">JS</h1>
+       <h1 class="php">PHP</h1>
+       <h1 class="python">PYTHON</h1>
+   </div>
+
+
+
+</body>
+
+</html>

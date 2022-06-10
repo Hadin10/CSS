@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .dropdown-container{
+            width: 80px;
+            height: 15px;
+            background-color: aqua;
+            text-align: center;
+            margin: 0 auto;
+            padding: 5px;
+           position: relative;
+        }
+
+        .dropdown-content{
+            width: 80px;
+            position: absolute;
+            text-align: left;
+            background-color: aqua;
+            padding: 5px;
+            left: -.5px;
+            display: none;
+        }
+        .dropdown-content a{
+            display: block;
+        }
+
+        .dropdown-container:hover .dropdown-content{
+            display: block;
+            
+        }
+
+        .dropdown-content a:hover{
+            background-color: rgb(247, 251, 4);
+
+        }
+    </style>
+</head>
+<body>
+
+   <div class="dropdown-container">
+       <a href="">Contact me</a>
+        <div class="dropdown-content">
+            <a href="">facebook</a>
+            <a href="">twitter</a>
+        </div>
+   </div>
+        
+    
+    
+</body>
+</html>
